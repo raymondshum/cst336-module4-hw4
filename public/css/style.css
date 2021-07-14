@@ -243,6 +243,13 @@ blockquote {
   margin-left: 1rem;
 }
 
+#faker img{
+  display: block;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* contact */
 #contact-content {
   display: flex;

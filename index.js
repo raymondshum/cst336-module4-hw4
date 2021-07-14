@@ -1,5 +1,5 @@
 const express = require('express');
-const faker = require('faker');
+const faker = require('faker/locale/en_US');
 
 const app = express();
 
@@ -13,7 +13,8 @@ app.get('/', (req, res) => {
   res.render('index',{"title":"Overview"});
 });
 app.get('/about', (req, res) => {
-  res.render('about',{"title":"About"});
+  res.render('about',{"title":"About", ...generateFake()});
+  console.log(generateFake());
 });
 app.get('/contact', (req, res) => {
   res.render('contact',{"title":"Contact"});
@@ -34,3 +35,17 @@ app.get('/sources', (req, res) => {
 app.listen(3000, "127.0.0.1", () => {
   console.log('server started');
 });
+
+function generateFake(){
+  let fakeEmp = {
+    "firstName" : faker.name.firstName(),
+    "lastName" : faker.name.lastName(),
+    "image" : faker.image.people(),
+    "joinDate" : faker.date.past(),
+    "department" : faker.commerce.department(),
+    "product" : faker.commerce.product(),
+    "catchPhrase" : faker.company.catchPhrase(),
+    "car" : faker.fake("{{vehicle.vehicle}}")
+  };
+  return fakeEmp;
+}
