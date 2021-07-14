@@ -1,0 +1,257 @@
+/* Header, Nav, Footer */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,600;1,500&display=swap');
+
+*{
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+header {
+  position:relative;
+  height: 250px;
+  background-image: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.5), 50%, rgba(0, 0, 0, 0.5)),
+    url(../img/pexels-photo-8370752.jpeg);
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+
+  justify-content: flex-end;
+  width: 100%;
+}
+
+ .header-title{
+  text-shadow: 2px 2px 5px black;
+  font-size: 2.5rem;
+  color: white;
+} 
+
+.page-title {
+  text-shadow: 2px 2px 5px black;
+  font-size: 2.0rem;
+  color: white;
+}
+
+body {
+  position: relative;
+  min-height: 100vh;
+}
+
+main {
+  width: 80%;
+  background-color: white;
+  margin: 2rem auto 2rem auto;
+  padding-bottom: 5rem;
+}
+
+/* Testing Nav Bar */
+#nav-bar {
+  font-size: 1.5rem;
+  background-color: rgba(231, 231, 231, 1.0);
+  box-shadow: 1px 1px 5px grey;
+  position: sticky;
+  top:0;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+}
+
+.dropdown {
+  position:absolute;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown li {
+  display: none;
+}
+
+.parent-item:hover > .dropdown li{
+  display: inline;
+}
+
+#nav-bar a {
+  text-decoration: none;
+  color: black;
+  
+}
+
+#nav-bar a:hover {
+  color:red;
+}
+
+.sub-item-1 {
+  background-color: rgba(211, 211, 211, 1.0);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sub-item-2 {
+  background-color: rgba(231, 231, 231, 1.0);
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+footer {
+  height: 4rem;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+footer ul {
+  list-style-type: none;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: .75rem;
+}
+
+.page-forward {
+  text-align: right;
+}
+
+.page-backward {
+  text-align: left;
+}
+
+.nav-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Overview */
+
+#overview-content img,
+#economic-impact-content .content-1 figure,
+#sources-content img{
+  float: left;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.content-1 {
+  text-align: justify;
+}
+
+/* Economic Impact */
+
+.content-top-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2rem;
+}
+
+figcaption {
+  text-align: center;
+}
+
+/* Environmental Impact */
+
+blockquote {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: rgba(231, 231, 231, 1.0);
+}
+
+#env-table {
+  display:flex; 
+  justify-content: center;
+  gap: 2rem;
+}
+
+#env-table table {
+  border-style: solid;
+  border-color: black;
+}
+
+#env-table table tr {
+  text-align: left;
+}
+
+.tr-2 {
+  background: rgba(231, 231, 231, 1.0);
+}
+
+.table-header th {
+  background: rgba(231, 231, 231, 1.0);
+  border-bottom-style: solid;
+  border-bottom-color: black;
+}
+
+/* future */
+
+#future-content .content-1 figure img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* sources */
+
+#sources-content a,
+#sources-content a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+#sources-content a:hover {
+  color: red;
+}
+
+.citation {
+  padding-left: 2rem;
+  text-indent: -2rem;
+  word-wrap:break-word;
+}
+
+#sources-list {
+  padding-left: 1rem;
+}
+
+/* About */
+#about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#about-me .content-1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 1rem;
+}
+
+/* contact */
+#contact-content {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-content iframe {
+  width: 640px;
+  height: 750px;
+  margin: 0;
+  border: 0;
+}
