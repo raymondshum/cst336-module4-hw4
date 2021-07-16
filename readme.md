@@ -13,6 +13,7 @@
 ---
 
 ## _Assignment 4: Express_
+[![Run on Repl.it](https://repl.it/badge/github/raymondshum/cst336-module4-hw4)](https://cst336-module4-hw4.raymondshum.repl.co/)
 
 ### **Objective:**
 
