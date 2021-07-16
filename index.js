@@ -41,10 +41,10 @@ function generateFake(){
     "firstName" : faker.name.firstName(),
     "lastName" : faker.name.lastName(),
     "image" : faker.image.people(),
-    "joinDate" : faker.date.past(),
+    "joinDate" : faker.date.past().toDateString(),
     "department" : faker.commerce.department(),
     "product" : faker.commerce.product(),
-    "catchPhrase" : faker.company.catchPhrase(),
+    "catchPhrase" : faker.company.catchPhrase().toLowerCase(),
     "car" : faker.fake("{{vehicle.vehicle}}")
   };
   return fakeEmp;
