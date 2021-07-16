@@ -33,17 +33,17 @@
 ## /index.js:
 
     function generateFake(){
-    let fakeEmp = {
-        "firstName" : faker.name.firstName(),
-        "lastName" : faker.name.lastName(),
-        "image" : faker.image.people(),
-        "joinDate" : faker.date.past().toDateString(),
-        "department" : faker.commerce.department(),
-        "product" : faker.commerce.product(),
-        "catchPhrase" : faker.company.catchPhrase().toLowerCase(),
-        "car" : faker.fake("{{vehicle.vehicle}}")
-    };
-    return fakeEmp;
+        let fakeEmp = {
+            "firstName" : faker.name.firstName(),
+            "lastName" : faker.name.lastName(),
+            "image" : faker.image.people(),
+            "joinDate" : faker.date.past().toDateString(),
+            "department" : faker.commerce.department(),
+            "product" : faker.commerce.product(),
+            "catchPhrase" : faker.company.catchPhrase().toLowerCase(),
+            "car" : faker.fake("{{vehicle.vehicle}}")
+        };
+        return fakeEmp;
     }
 
     app.get('/about', (req, res) => {
